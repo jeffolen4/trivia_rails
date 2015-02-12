@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: trivia_rails_development
+  database: trivia_rails_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: trivia_rails_production
+  database: trivia_rails_prod
   username: trivia_rails
   password: <%= ENV['TRIVIA_RAILS_DATABASE_PASSWORD'] %>
